@@ -133,9 +133,9 @@ function setup() {
     // civ[0].controller.setLayers(bestController)
 
     iterationSlider = createSlider(1, 20, 5, 1)
-    iterationSlider.position(width - 250, 20)
+    iterationSlider.position(width - 300, 20)
     maxTimeSlider = createSlider(10, 120, 60, 1)
-    maxTimeSlider.position(width - 250, 50)
+    maxTimeSlider.position(width - 300, 50)
 
     const dm = document.getElementById("download_map")
     dm.addEventListener("click", () => download("map.json", JSON.stringify({
