@@ -119,7 +119,7 @@ function mouseDragged() {
 }
 
 function setup() {
-    createCanvas(600, 600)
+    createCanvas(700, 600)
 
     startPosition = { x: 200, y: 110 }
 
@@ -132,7 +132,7 @@ function setup() {
 
     // civ[0].controller.setLayers(bestController)
 
-    iterationSlider = createSlider(1, 20, 1, 1)
+    iterationSlider = createSlider(1, 20, 5, 1)
     iterationSlider.position(width - 250, 20)
     maxTimeSlider = createSlider(10, 120, 60, 1)
     maxTimeSlider.position(width - 250, 50)
@@ -188,7 +188,7 @@ function draw() {
     text(" Gen: " + gen, 10, 90)
     text(" IPF: " + iterationSlider.value(), 10, 120)
     text("Best: " + bestScore, 10, 150)
-    text("IPF", iterationSlider.x + iterationSlider.width, iterationSlider.y + 10);
+    text("Simulation Speed", iterationSlider.x + iterationSlider.width, iterationSlider.y + 10);
     text("max time", maxTimeSlider.x + maxTimeSlider.width, maxTimeSlider.y + 10);
     text(mode, 200, 30)
     stroke(255)
